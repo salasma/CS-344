@@ -1,0 +1,122 @@
+PRE-SCRIPT INFO
+  Grading Script PID: 218200
+  Note: your smallsh will report a different PID when evaluating $$
+: BEGINNING TEST SCRIPT
+: 
+: --------------------
+: Using comment (5 points if only next prompt is displayed next)
+: : 
+: 
+: --------------------
+: ls (10 points for returning dir contents)
+: 1
+junk
+junk2
+p2testscript
+README.md
+smallsh
+smallsh.c
+: 
+: 
+: --------------------
+: ls out junk
+: : 
+: 
+: --------------------
+: cat junk (15 points for correctly returning contents of junk)
+: 1
+junk
+junk2
+p2testscript
+README.md
+smallsh
+smallsh.c
+: 
+: 
+: --------------------
+: wc in junk (15 points for returning correct numbers from wc)
+:  7  7 54
+: 
+: 
+: --------------------
+: wc in junk out junk2; cat junk2 (10 points for returning correct numbers from wc)
+: :  7  7 54
+: 
+: 
+: --------------------
+: test -f badfile (10 points for returning error value of 1, note extraneous &)
+: : exit value 1
+: 
+: 
+: --------------------
+: wc in badfile (10 points for returning text error)
+: Error: can not open this file.
+: No such file or directory
+   0    0    0
+: 
+: 
+: --------------------
+: badfile (10 points for returning text error)
+: execvp: No such file or directory
+: 
+: 
+: --------------------
+: sleep 100 background (10 points for returning process ID of sleeper)
+: This is a background: 218271
+: 
+: 
+: --------------------
+: pkill -signal SIGTERM sleep (10 points for pid of killed process, 10 points for signal)
+: (Ignore message about Operation Not Permitted)
+: pkill: killing pid 43297 failed: Operation not permitted
+pkill: killing pid 177539 failed: Operation not permitted
+pkill: killing pid 186731 failed: Operation not permitted
+pkill: killing pid 188150 failed: Operation not permitted
+pkill: killing pid 194094 failed: Operation not permitted
+pkill: killing pid 194095 failed: Operation not permitted
+pkill: killing pid 194096 failed: Operation not permitted
+pkill: killing pid 205680 failed: Operation not permitted
+pkill: killing pid 205896 failed: Operation not permitted
+pkill: killing pid 206006 failed: Operation not permitted
+pkill: killing pid 210681 failed: Operation not permitted
+pkill: killing pid 210705 failed: Operation not permitted
+pkill: killing pid 212876 failed: Operation not permitted
+pkill: killing pid 215025 failed: Operation not permitted
+pkill: killing pid 216171 failed: Operation not permitted
+pkill: killing pid 321191 failed: Operation not permitted
+Background 218271 terminated.
+Child 218271 exited abnormally due to signal 15
+: 
+: 
+: --------------------
+: : 
+: 
+: --------------------
+: sleep 100 background (10 points for returning process ID of sleeper)
+: This is a background: 218313
+: 
+: 
+: --------------------
+: pkill -signal SIGTERM sleep (10 points for pid of killed process, 10 points for signal)
+: (Ignore message about Operation Not Permitted)
+: pkill: killing pid 43297 failed: Operation not permitted
+pkill: killing pid 177539 failed: Operation not permitted
+pkill: killing pid 186731 failed: Operation not permitted
+pkill: killing pid 188150 failed: Operation not permitted
+pkill: killing pid 194094 failed: Operation not permitted
+pkill: killing pid 194095 failed: Operation not permitted
+pkill: killing pid 194096 failed: Operation not permitted
+pkill: killing pid 205680 failed: Operation not permitted
+pkill: killing pid 205896 failed: Operation not permitted
+pkill: killing pid 206006 failed: Operation not permitted
+pkill: killing pid 210681 failed: Operation not permitted
+pkill: killing pid 210705 failed: Operation not permitted
+pkill: killing pid 212876 failed: Operation not permitted
+pkill: killing pid 216171 failed: Operation not permitted
+pkill: killing pid 321191 failed: Operation not permitted
+Background 218313 terminated.
+Child 218313 exited abnormally due to signal 15
+: 
+: 
+: --------------------
+: 
