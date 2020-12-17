@@ -1,32 +1,26 @@
-# CS-162-C++
-Course title: Introduction to Computer Science II
+# CS-344
+Course title: Operating Systems I
 
-Lecturer: Justin Goins
-
-Name: Hao Jia
-
-ONID: 933636448
-
-Section: CS_162_C001_S2019
 
 # Description:
 
-Basic data structures. Computer programming techniques and application of software engineering principles. Introduction to analysis of programs.
-Repository for all course related modules of CS162 at Oregon State University for the Spring 2019 term.
+Introduction to operating systems using UNIX as the case study. System calls and utilities, fundamentals of processes and interprocess communication.
 
 # Assignments:
 
-1) The Wizard Spellbook Catalog
-A file I/O intensive program which utilized different accounts for different "scopes", with the implementation of sorting algorithms, file I/Os, Logins.
+1) Assignment 1: Adventure
+This assignment is split up into two C programs (no other languages is allowed). The first program (hereafter called the "rooms program") will be contained in a file named <STUDENT ONID USERNAME>.buildrooms.c, which when compiled with the same name (minus the extension) and run creates a series of files that hold descriptions of the in-game rooms and how the rooms are connected. The second program (hereafter called the "game") will be called <STUDENT ONID USERNAME>.adventure.c and when compiled with the same name (minus the extension) and run provides an interface for playing the game using the most recently generated rooms.
 
-2) The Pizza Portal
-OOP "Has-a" relationship practice as well as file I/O
+2) Assignment 2: smallsh
+In this assignment you will write your own shell in C, similar to bash. No other languages, including C++, are allowed, though you may use C99. The shell will run command line instructions and return the results similar to other shells you have used, but without many of their fancier features.
 
-3) Zoo Tycoon
-OOP "Is-a" relationshop with inheritance practice as well as file I/O and metamorphism of different "animals" to be an animal
+3) Assignment 3: One-Time Pads
+In this assignment, you will be creating five small programs that encrypt and decrypt information using a one-time pad-like system. These programs will combine the multi-processing code you have been learning with socket-based inter-process communication. Your programs will also be accessible from the command line using standard Unix features like input/output redirection, and job control. Finally, you will write a short compilation script.
 
-4) Hunt the Wumpus
-A clone of a popular game known as Hunt the Wumpus (OOP, "Is-a", STL templates)
+4) Assignment 4: Multi-threaded Programming
+In this assignment you will apply the principles of multi-threaded programming to write two programs.
 
-5) Linked List Implementation
-A simple implementation of Linked List from scratch as well as some common methods.
+- You will write a C program that uses the Producer-Consumer model to implement a  character processing program.
+- You will modify a single threaded Rust program provided to you that processes data using the Map-Reduce programming model to create a multi-threaded version.
+
+
